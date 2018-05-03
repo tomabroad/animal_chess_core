@@ -23,6 +23,10 @@ public class Player {
 		return color;
 	}
 
+	public Board getBoard() {
+		return board;
+	}
+
 	public void setBoard(Board board) {
 		this.board = board;
 	}

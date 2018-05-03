@@ -16,6 +16,7 @@ import model.Color;
 import model.Move;
 import model.Square;
 import model.piece.Piece;
+import model.player.MonteCarloPlayer;
 import model.player.Player;
 
 public class Game extends JFrame {
@@ -45,8 +46,8 @@ public class Game extends JFrame {
 
 	private void initUI() {
 		// main panel
-		whiteCapturePanel = new JPanel();
-		blackCapturePanel = new JPanel();
+		whiteCapturePanel = new JPanel(new GridLayout(1, 6));
+		blackCapturePanel = new JPanel(new GridLayout(1, 6));
 		initSquareButtons();
 		initBoardPanel();
 		initMainPanel();
@@ -182,7 +183,7 @@ public class Game extends JFrame {
 	}
 
 	private void computerPlay() {
-		Player com = player.opponent();
+		Player com = new MonteCarloPlayer(Color.opposite(player.getColor()));
 		com.setBoard(board);
 		Move move = com.findMove();
 
