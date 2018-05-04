@@ -33,6 +33,11 @@ public class Board {
 		captures = new LinkedList<Piece>(original.captures);
 	}
 
+	public Board(Piece[][] pieces, List<Piece> captures) {
+		this.pieces = pieces;
+		this.captures = captures;
+	}
+
 	private void initPieces() {
 		pieces = new Piece[ROWS][COLS];
 		pieces[0][0] = new Giraffe(Color.WHITE);
@@ -184,5 +189,4 @@ public class Board {
 		}
 		return false;
 	}
-
 }
