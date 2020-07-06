@@ -1,4 +1,4 @@
-package tests.model;
+package model;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
@@ -30,7 +30,7 @@ public class BoardTest {
 			board.update(move);
 			Assert.fail("No exception");
 		} catch (RuntimeException e) {
-			String expected = "Illegal move: {(4,1)>(1,1)}";
+			String expected = "Illegal move: {'from':[4,1],'to':[1,1]}";
 			String actual = e.getMessage();
 			Assert.assertEquals(expected, actual);
 		}

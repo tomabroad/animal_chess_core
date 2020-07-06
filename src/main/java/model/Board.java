@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -188,5 +189,10 @@ public class Board {
 			}
 		}
 		return false;
+	}
+
+	@Override
+	public String toString() {
+		return "Board [pieces=" + Arrays.toString(pieces) + ", captures=" + captures + "]";
 	}
 }

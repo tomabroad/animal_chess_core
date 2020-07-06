@@ -79,7 +79,7 @@ public class Move implements Comparable<Move> {
 	@Override
 	public String toString() {
 		String str = (isDrop() ? droppingPiece.toString() : from.toString());
-		return "{" + str + ">" + to + "}";
+		return "{'from':" + str + ",'to':" + to + "}";
 	}
 
 	@Override

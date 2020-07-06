@@ -1,4 +1,4 @@
-package tests.model.piece;
+package model.piece;
 
 import junit.framework.Assert;
 import model.Color;

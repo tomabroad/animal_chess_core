@@ -52,6 +52,6 @@ public class Square implements Comparable<Square> {
 
 	@Override
 	public String toString() {
-		return "(" + i + "," + j + ")";
+		return "[" + i + "," + j + "]";
 	}
 }

@@ -1,4 +1,4 @@
-package tests.model.player;
+package model.player;
 
 import java.util.Collections;
 import java.util.List;
@@ -34,20 +34,19 @@ public class PlayerTest {
 		// initial move
 		black.setBoard(b);
 		assertFindMoves(black,
-				"[{(2,1)>(1,1)}, {(3,1)>(2,0)}, {(3,1)>(2,2)}, {(3,2)>(2,2)}]");
+				"[{'from':[2,1],'to':[1,1]}, {'from':[3,1],'to':[2,0]}, {'from':[3,1],'to':[2,2]}, {'from':[3,2],'to':[2,2]}]");
 
 		// remove checked move (after black chick captures white chick)
 		b.update(new Move(new Square(2, 1), new Square(1, 1)));
 		white.setBoard(b);
 		assertFindMoves(white,
-				"[{(0,1)>(1,0)}, {(0,1)>(1,1)}, {(0,1)>(1,2)}, {(0,2)>(1,1)}]");
+				"[{'from':[0,1],'to':[1,0]}, {'from':[0,1],'to':[1,1]}, {'from':[0,1],'to':[1,2]}, {'from':[0,2],'to':[1,1]}]");
 
 		// add drop (after white elephant captures black chick)
 		b.update(new Move(new Square(0, 2), new Square(1, 1)));
 		black.setBoard(b);
 		assertFindMoves(black,
-				"[{C>(0,2)}, {C>(1,0)}, {C>(1,2)}, {C>(2,0)}, {C>(2,1)}, {C>(2,2)}"
-						+ ", {(3,0)>(2,1)}, {(3,1)>(2,1)}, {(3,2)>(2,2)}]");
+				"[{'from':C,'to':[0,2]}, {'from':C,'to':[1,0]}, {'from':C,'to':[1,2]}, {'from':C,'to':[2,0]}, {'from':C,'to':[2,1]}, {'from':C,'to':[2,2]}, {'from':[3,0],'to':[2,1]}, {'from':[3,1],'to':[2,1]}, {'from':[3,2],'to':[2,2]}]");
 	}
 
 	private void assertFindMoves(Player player, String expected) {
