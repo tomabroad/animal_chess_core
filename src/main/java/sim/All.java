@@ -12,7 +12,6 @@ import model.Board;
 import model.Color;
 import model.Move;
 import model.player.Player;
-import util.KeyUtil;
 
 public class All {
 
