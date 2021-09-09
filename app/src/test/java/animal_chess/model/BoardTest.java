@@ -1,22 +1,18 @@
-package model;
+package animal_chess.model;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
 import java.util.List;
 
-import junit.framework.Assert;
-import model.Board;
-import model.Color;
-import model.Move;
-import model.Square;
-import model.piece.Chick;
-import model.piece.Piece;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
+
+import animal_chess.core.model.Board;
+import animal_chess.core.model.Color;
+import animal_chess.core.model.Move;
+import animal_chess.core.model.Square;
+import animal_chess.core.model.piece.Chick;
+import animal_chess.core.model.piece.Piece;
+import junit.framework.Assert;
 
 public class BoardTest {
 

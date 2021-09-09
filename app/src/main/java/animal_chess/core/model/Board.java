@@ -1,15 +1,15 @@
-package model;
+package animal_chess.core.model;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import model.piece.Chick;
-import model.piece.Elephant;
-import model.piece.Giraffe;
-import model.piece.Hen;
-import model.piece.Lion;
-import model.piece.Piece;
+import animal_chess.core.model.piece.Chick;
+import animal_chess.core.model.piece.Elephant;
+import animal_chess.core.model.piece.Giraffe;
+import animal_chess.core.model.piece.Hen;
+import animal_chess.core.model.piece.Lion;
+import animal_chess.core.model.piece.Piece;
 
 public class Board {
   public static final int ROWS = 4;

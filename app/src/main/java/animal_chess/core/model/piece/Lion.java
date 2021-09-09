@@ -1,9 +1,9 @@
-package model.piece;
+package animal_chess.core.model.piece;
 
 import java.util.List;
 
-import model.Color;
-import model.Square;
+import animal_chess.core.model.Color;
+import animal_chess.core.model.Square;
 
 public class Lion extends Piece {
 

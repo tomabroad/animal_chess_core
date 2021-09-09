@@ -13,5 +13,5 @@ dependencies {
 }
 
 application {
-    mainClass = 'animal_chess_core.App'
+    mainClass = 'animal_chess.core.App'
 }

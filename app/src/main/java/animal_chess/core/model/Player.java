@@ -1,15 +1,11 @@
-package model.player;
+package animal_chess.core.model;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-import model.Board;
-import model.Color;
-import model.Move;
-import model.Square;
-import model.piece.Lion;
-import model.piece.Piece;
+import animal_chess.core.model.piece.Lion;
+import animal_chess.core.model.piece.Piece;
 
 public class Player {
   private Color color;

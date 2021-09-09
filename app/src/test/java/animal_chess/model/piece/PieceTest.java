@@ -1,13 +1,13 @@
-package model.piece;
-
-import junit.framework.Assert;
-import model.Color;
-import model.piece.Chick;
-import model.piece.Elephant;
-import model.piece.Giraffe;
-import model.piece.Piece;
+package animal_chess.model.piece;
 
 import org.junit.Test;
+
+import animal_chess.core.model.Color;
+import animal_chess.core.model.piece.Chick;
+import animal_chess.core.model.piece.Elephant;
+import animal_chess.core.model.piece.Giraffe;
+import animal_chess.core.model.piece.Piece;
+import junit.framework.Assert;
 
 public class PieceTest {
 

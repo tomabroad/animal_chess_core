@@ -1,6 +1,6 @@
-package model;
+package animal_chess.core.model;
 
-import model.piece.Piece;
+import animal_chess.core.model.piece.Piece;
 
 /**
  * immutable

@@ -1,14 +1,14 @@
-package model.piece;
+package animal_chess.model.piece;
 
 import java.util.Collections;
 import java.util.List;
 
-import junit.framework.Assert;
-import model.Color;
-import model.Square;
-import model.piece.Hen;
-
 import org.junit.Test;
+
+import animal_chess.core.model.Color;
+import animal_chess.core.model.Square;
+import animal_chess.core.model.piece.Hen;
+import junit.framework.Assert;
 
 public class HenTest {
 

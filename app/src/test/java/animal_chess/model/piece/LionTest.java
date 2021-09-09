@@ -1,20 +1,14 @@
-package model.piece;
+package animal_chess.model.piece;
 
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-import junit.framework.Assert;
-import model.Color;
-import model.Square;
-import model.piece.Lion;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
+
+import animal_chess.core.model.Color;
+import animal_chess.core.model.Square;
+import animal_chess.core.model.piece.Lion;
+import junit.framework.Assert;
 
 public class LionTest {
 

@@ -1,4 +1,4 @@
-package model;
+package animal_chess.core.model;
 
 public enum Color {
   BLACK, WHITE;
